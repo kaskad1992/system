@@ -1,0 +1,17 @@
+<h1>Committee</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @committee.name %>
+</p>
+
+<p>
+  <% unless @committee.logo.blank? %>
+    <%= image_tag (@committee.logo) if @committee.logo %>
+    <% end %>
+</p>
+
+<%= link_to 'Edit', edit_committee_path(@committee) %> |
+<%= link_to 'Back', committees_path %>

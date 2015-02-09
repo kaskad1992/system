@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Vootes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Id const</th>
+      <th>Id com</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vootes.each do |voote| %>
+      <tr>
+        <td><%= voote.number %></td>
+        <td><%= voote.id_const %></td>
+        <td><%= voote.id_com %></td>
+        <td><%= link_to 'Show', voote %></td>
+        <td><%= link_to 'Edit', edit_voote_path(voote) %></td>
+        <td><%= link_to 'Destroy', voote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Voote', new_voote_path %>

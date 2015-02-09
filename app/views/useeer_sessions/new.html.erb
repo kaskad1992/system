@@ -1,0 +1,16 @@
+<h1>Welcome to the best System</h1>
+<h2>Login</h2>
+
+<%= form_for @useeer_session, :as => :useeer_session, :url => { :action => "create" } do |f| %>
+  <p>
+    <%= f.label :login %><br>
+    <%= f.text_field :login %>
+  </p>
+  <p>
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.submit "(: Submit :)" %>
+  </p>
+<% end %>

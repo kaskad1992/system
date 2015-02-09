@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  id_const: 1
+  id_com: 1
+
+two:
+  number: 1
+  id_const: 1
+  id_com: 1

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @voote.number %>
+</p>
+
+<p>
+  <strong>Id const:</strong>
+  <%= @voote.id_const %>
+</p>
+
+<p>
+  <strong>Id com:</strong>
+  <%= @voote.id_com %>
+</p>
+
+<%= link_to 'Edit', edit_voote_path(@voote) %> |
+<%= link_to 'Back', vootes_path %>

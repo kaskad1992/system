@@ -1,0 +1,26 @@
+<h1>Useeers#edit</h1>
+<p>Find me in app/views/useeers/edit.html.erb</p>
+
+<%= form_for @useeer do |f| %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname %>
+  </p>
+  <p>
+    <%= f.label :role %><br />
+    <%= f.text_field :role %>
+  </p>
+  <p>
+    "Nie można zmieniać loginu!"
+  </p>
+  <p>
+    "Hasła też nie :)"
+  </p>
+  <p>
+    <%= f.submit "(: Submit :)" %>
+  </p>
+<% end %>
