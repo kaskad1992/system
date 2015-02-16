@@ -1,32 +1,58 @@
-<h1>Committee</h1>
+<%= stylesheet_link_tag "style" %>
 
-<%= form_for(@committee) do |f| %>
-  <% if @committee.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@committee.errors.count, "error") %> prohibited this committee from being saved:</h2>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+          <img src="images/img06.jpg" alt="" width="138" heigh="9$
+        </div>
+        <h1>The best System</h1>
 
-      <ul>
-      <% @committee.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
+
+    	  <h2>Committee</h2>
+
+	  <%= form_for(@committee) do |f| %>
+	    <% if @committee.errors.any? %>
+	      <div id="error_explanation">
+	        <h2><%= pluralize(@committee.errors.count, "error") %> prohibited this committee from being saved:</h2>
+
+	        <ul>
+	        <% @committee.errors.full_messages.each do |message| %>
+	          <li><%= message %></li>
+	        <% end %>
+	        </ul>
+	      </div>
+	    <% end %>
+
+	    <div class="field">
+	      <%= f.label :name %><br>
+	      <%= f.text_field :name %>
+	    </div>
+	    <div class="field">
+	      <%= f.label :logo %><br>
+	      <%= f.text_field :logo %>
+	    </div>
+	    <div class="field">
+	      <%= f.label :votes %><br>
+	      <%= f.text_field :votes %>
+	    </div>
+
+	    <div class="actions">
+	      <%= f.submit %>
+	    </div>
+	  <% end %>
+
+        </div>
+      </div>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :logo %><br>
-    <%= f.text_field :logo %>
-  </div>
-  <div class="field">
-    <%= f.label :votes %><br>
-    <%= f.text_field :votes %>
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</body>

@@ -1,20 +1,53 @@
-<p id="notice"><%= notice %></p>
+<%= stylesheet_link_tag "style" %>
 
-<p>
-  <strong>Login:</strong>
-  <%= @useeer.login %>
-</p>
-<p>
-  <strong>Role:</string>
-  <%= @useeer.role %>
-</p>
-<p>
-  <strong>Name:</strong>
-  <%= @useeer.name %>
-</p>
-<p>
-  <strong>Surname:</strong>
-  <%= @useeer.surname %>
-</p>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+          <img src="images/06.jpg" alt="" width="138" heigh="9$
+        </div>
+        <h1>The best System</h1>
 
-<%= link_to 'Back', useeers_path %>
+      </div>
+
+      <div id="content">
+        <br>
+	
+	<p id="notice"><%= notice %></p>
+
+	<p>
+	  <strong>Login:</strong>
+	  <%= @useeer.login %>
+	</p>
+	<p>
+	  <strong>Role:</string>
+	  <%= @useeer.role %>
+	</p>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @useeer.name %>
+	</p>
+	<p>
+	  <strong>Surname:</strong>
+	  <%= @useeer.surname %>
+	</p>
+	
+	<div id="menu">
+          <ul>
+	    <li>
+	      <%= link_to 'Back', useeers_path %>
+	    </li>
+	  </ul>
+	</div>
+
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
+
+  </div>
+
+</body>

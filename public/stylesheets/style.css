@@ -4,7 +4,7 @@
 }
 
 body {
-	background: #CDE5FA repeat-x;
+	background: #F6F6F6 url(images/img01.jpg) repeat-x;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #6B6B6B;
@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 h2, h3, h4 {
 	margin-bottom: 20px;
 	padding-bottom: 9px;
-	border-bottom: 1px solid #F2F2F2;
+	/*border-bottom: 1px solid #F2F2F2;*/
 	letter-spacing: -0.035em;
 	font-weight: normal;
 	color: #37404C;
@@ -135,23 +135,24 @@ img.right {
 
 #header {
 	height: 140px;
-	/* background: #83BFF3 url(images*//*img03.jpg) no-repeat;*/
-	background: #83BFF3;
+	background: #087FE7 url(images/img03.jpg) no-repeat;
 }
 
 /* Logo */
 
-#logo {
+#logo img {
 	float: left;
+	z-index: 2;
 }
 
 #logo h1 {
-	margin: 0;
+	margin: 10;
 	padding: 90px 0 0 78px;
 	text-transform: lowercase;
 	letter-spacing: -3px;
 	font-size: 40px;
 	color: #FFFFFF;
+	background: url(images/img06.jpg) no-repeat;
 }
 
 #logo h1 a {
@@ -162,10 +163,11 @@ img.right {
 /* Menu */
 
 #menu {
-	float: right;
+	float: left;
 }
 
 #menu ul {
+        font-size: 16px;
 	margin: 0;
 	padding: 112px 78px 0 0;
 	list-style: none;
@@ -176,10 +178,10 @@ img.right {
 	display: inline;
 }
 
-#menu a {
+#menu li {
 	padding-left: 40px;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	color: #FFFFFF;
 }

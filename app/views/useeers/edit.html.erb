@@ -1,26 +1,53 @@
-<h1>Useeers#edit</h1>
-<p>Find me in app/views/useeers/edit.html.erb</p>
+<%= stylesheet_link_tag "style" %>
 
-<%= form_for @useeer do |f| %>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :surname %><br />
-    <%= f.text_field :surname %>
-  </p>
-  <p>
-    <%= f.label :role %><br />
-    <%= f.text_field :role %>
-  </p>
-  <p>
-    "Nie można zmieniać loginu!"
-  </p>
-  <p>
-    "Hasła też nie :)"
-  </p>
-  <p>
-    <%= f.submit "(: Submit :)" %>
-  </p>
-<% end %>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+          <img src="images/img06.jpg" alt="" width="138" heigh="9$
+        </div>
+        <h1>The best System</h1>
+
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
+
+	  <h2>Useeers#edit</h2>
+
+	  <%= form_for @useeer do |f| %>
+	    <p>
+	      <%= f.label :name %><br />
+	      <%= f.text_field :name %>
+	    </p>
+	    <p>
+	      <%= f.label :surname %><br />
+	      <%= f.text_field :surname %>
+	    </p>
+	    <p>
+	      <%= f.label :role %><br />
+	      <%= f.text_field :role %>
+	    </p>
+	    <p>
+	      "Nie można zmieniać loginu!"
+	    </p>
+	    <p>
+	      "Hasła też nie :)"
+	    </p>
+	    <p>
+	      <%= f.submit "(: Submit :)" %>
+	    </p>
+	  <% end %>
+
+	</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
+
+  </div>
+
+</body>

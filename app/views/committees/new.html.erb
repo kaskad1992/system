@@ -1,5 +1,39 @@
-<h1>New Committee</h1>
+<%= stylesheet_link_tag "style" %>
 
-<%= render 'form' %>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+          <img src="images/img06.jpg" alt="" width="138" heigh="9$
+        </div>
+        <h1>The best System</h1>
 
-<%= link_to 'Back', committees_path %>
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
+
+	  <h2>New Committee</h2>
+
+	  <%= render 'form' %>
+
+	  <div id="menu">
+	    <ul>
+	      <li>
+	        <%= link_to 'Back', committees_path %>
+	      </li>
+	    </ul>
+	  </div>
+
+	</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
+
+  </div>
+
+</body>

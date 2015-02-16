@@ -1,56 +1,91 @@
-<h1>New User</h1>
+<%= stylesheet_link_tag "style" %>
 
-<%= form_for(@useeer) do |f| %>
-  <% if @useeer.errors.any? %>
-    <div id="error_explanation">
-    <h2><%= pluralize(@useeer.errors.count, "error") %> prohibited this user from being saved:</h2>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+          <img src="images/img06.jpg" alt="" width="138" heigh="9$
+        </div>
+        <h1>The best System</h1>
 
-    <ul>
-      <% @useeer.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
+
+  	  <h2>New User</h2>
+
+	  <%= form_for(@useeer) do |f| %>
+	    <% if @useeer.errors.any? %>
+	      <div id="error_explanation">
+	      <h2><%= pluralize(@useeer.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+	      <ul>
+	        <% @useeer.errors.full_messages.each do |message| %>
+	          <li><%= message %></li>
+	        <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+	  <p>
+	    <%= f.label :name %><br />
+	    <%= f.text_field :name %>
+	  </p>
+ 	  <p>
+	    <%= f.label :surname %><br />
+	    <%= f.text_field :surname %>
+	  </p>
+	  <p>
+	    <%= f.label :login %><br />
+	    <%= f.text_field :login %>
+	  </p>
+	  <p>
+	    <%= f.label :password, f.object.new_record? ? nil : "Change password" %><br />
+	    <%= f.password_field :password %>
+	  </p>
+	  <p>
+	    <%= f.label :password_confirmation %><br />
+	    <%= f.password_field :password_confirmation %>
+	  </p>
+	  <p>
+	    <%= f.radio_button :role, 'admin' %>
+	    <%= label :role_admin, 'Admin' %>
+	  </p>
+	  <p>
+	    <%= f.radio_button :role, 'constituency' %>
+	    <%= label :role_constituency, 'Coordinator1' %>
+	  </p>
+	  <p>
+	    <%= f.radio_button :role, 'constituency' %>
+	    <%= label :role_constituency, 'Coordinator2' %>
+	  </p>
+ 	  <p>
+	    <%= f.radio_button :role, 'constituency' %>
+	    <%= label :role_constituency, 'Coordinator3' %>
+	  </p>
+
+	  <p class="actions">
+	    <%= f.submit %>
+	  </p>
+	  <% end %>
+
+	  <div id="menu">
+	    <ul>
+	      <li>
+	        <%= link_to 'Back', menus_path %>
+	      </li>
+	    </ul>
+	  </div>
+
+	</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
+
   </div>
-<% end %>
-<p>
-  <%= f.label :name %><br />
-  <%= f.text_field :name %>
-</p>
-<p>
-  <%= f.label :surname %><br />
-  <%= f.text_field :surname %>
-</p>
-<p>
-  <%= f.label :login %><br />
-  <%= f.text_field :login %>
-</p>
-<p>
-  <%= f.label :password, f.object.new_record? ? nil : "Change password" %><br />
-  <%= f.password_field :password %>
-</p>
-<p>
-  <%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %>
-</p>
-<p>
-  <%= f.radio_button :role, 'admin' %>
-  <%= label :role_admin, 'Admin' %>
-</p>
-<p>
-  <%= f.radio_button :role, 'constituency' %>
-  <%= label :role_constituency, 'Coordinator1' %>
-</p>
-<p>
-  <%= f.radio_button :role, 'constituency' %>
-  <%= label :role_constituency, 'Coordinator2' %>
-</p>
-<p>
-  <%= f.radio_button :role, 'constituency' %>
-  <%= label :role_constituency, 'Coordinator3' %>
-</p>
 
-<p class="actions">
-  <%= f.submit %>
-</p>
-<% end %>
-<%= link_to 'Back', useeers_path %>
+</body>

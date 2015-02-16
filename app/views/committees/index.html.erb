@@ -1,31 +1,69 @@
-<p id="notice"><%= notice %></p>
+<%= stylesheet_link_tag "style" %>
 
-<h1>Listing Committees</h1>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+          <img src="images/img06.jpg" alt="" width="138" heigh="9$
+        </div>
+        <h1>The best System</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Logo</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
 
-  <tbody>
-    <% @committees.each do |committee| %>
-      <tr>
-        <td><%= committee.name %></td>
-        <td><%= image_tag (committee.logo) if committee.logo %></td>
+	  <h2>Listing Committees</h2>
+	  <p id="notice"><%= notice %></p>
 
-        <td><%= link_to 'Show', committee %></td>
-        <td><%= link_to 'Edit', edit_committee_path(committee) %></td>
-        <td><%= link_to 'Destroy', committee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+	  <table id="table">
+	    <thead>
+	      <tr>
+	        <th>Name</th>
+	        <th>Logo</th>
+	        <th colspan="3"></th>
+	      </tr>
+	    </thead>
 
-<br>
+	    <tbody>
+	      <% @committees.each do |committee| %>
+	        <tr>
+	          <td><%= committee.name %></td>
+	          <td><%= image_tag (committee.logo) if committee.logo %></td>
+	
+	          <td><%= link_to 'Show', committee %></td>
+	          <td><%= link_to 'Edit', edit_committee_path(committee) %></td>
+	          <td><%= link_to 'Destroy', committee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	        </tr>
+	      <% end %>
+	    </tbody>
+	  </table>
 
-<%= link_to 'New Committee', new_committee_path %>
-<%= link_to 'Logout', logout_path %>
+	  <br>
+
+	  <div id="menu">
+	    <ul>
+	      <li>
+	        <%= link_to 'New Committee', new_committee_path %><br>
+	      </li>
+	      <li>
+	        <%= link_to 'Back', menus_path %><br>
+	      </li>
+	      <li>
+	        <%= link_to 'Logout', logout_path %><br>
+	      </li>
+	    </ul>
+	  </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
+
+  </div>
+
+</body>

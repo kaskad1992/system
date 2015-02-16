@@ -3,7 +3,7 @@ class ConstituenciesController < ApplicationController
   before_action :set_constituency, only: [ :show, :edit, :update, :destroy ] 
   
   def index
-    @constituency = Constituency.all
+    @constituencies = Constituency.all
   end
   
   def show

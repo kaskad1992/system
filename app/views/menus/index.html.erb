@@ -1,10 +1,46 @@
-<div id="content">
-  <h1>Welcome to the best System</h1>
-  <h2>Menu</h2>
+<%= stylesheet_link_tag "style" %>
 
-<%= link_to 'Committees', committees_path(@committee) %>
-<%= link_to 'Constituencies', constituencies_path(@constituency) %>
-<%= link_to 'Users', useeers_path(@useeer) %>
-<%= link_to 'Logout', logout_path %>
-</div>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+          <img src="images/img06.jpg" alt="" width="138" heigh="9$
+        </div>
+        <h1>The best System</h1>
+
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
+
+          <h1>The best System</h1>
+          <div id="menu">
+            <ul><strong>Menu</strong>
+              <li>
+                <%= link_to 'Committees', committees_path(@committee) %><br>
+              </li>
+              <li>
+                <%= link_to 'Constituencies', constituencies_path(@constituency) %><br>
+              </li>   
+              <li>
+                <%= link_to 'New User', new_useeer_path(@useeer) %><br>
+              </li>
+              <li>    
+                <%= link_to 'Logout', logout_path %><br>
+              </li>
+            </ul>
+          </div>
+
+        </div> 
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
+
+  </div>
+
+</body>
 

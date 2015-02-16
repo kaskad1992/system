@@ -1,18 +1,56 @@
-<h1>Committee</h1>
+<%= stylesheet_link_tag "style" %>
 
-<p id="notice"><%= notice %></p>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+          <img src="images/img06.jpg" alt="" width="138" heigh="9$
+        </div>
+        <h1>The best System</h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @committee.name %>
-</p>
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
 
-<p>
-  <% unless @committee.logo.blank? %>
-    <%= image_tag (@committee.logo) if @committee.logo %>
-    <% end %>
-</p>
+   	  <h2>Committee</h2>
 
-<%= link_to 'Edit', edit_committee_path(@committee) %> |
-<%= link_to 'Back', committees_path %>
-<%= link_to 'Logout', logout_path %>
+	  <p id="notice"><%= notice %></p>
+
+  	  <p>
+	    <strong>Name:</strong>
+	    <%= @committee.name %>
+	  </p>
+
+	  <p>
+	    <% unless @committee.logo.blank? %>
+	      <%= image_tag (@committee.logo) if @committee.logo %>
+	      <% end %>
+	  </p>
+
+	  <div id="menu">
+	    <ul>
+	      <li>
+	        <%= link_to 'Edit', edit_committee_path(@committee) %><br>
+	      </li>
+	      <li>
+	        <%= link_to 'Back', committees_path %><br>
+	      </li>
+	      <li>
+	        <%= link_to 'Logout', logout_path %><br>
+	      </li>
+	    </ul>
+	  </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
+
+  </div>
+
+</body>

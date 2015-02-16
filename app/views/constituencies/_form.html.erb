@@ -1,38 +1,62 @@
-<h1>Constituency</h1>
-
 <%= stylesheet_link_tag "style" %>
 
-<%= form_for(@constituency) do |f| %>
-  <% if @constituency.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@constituency.errors.count, "error") %> prohibited this constituency from being saved:</h2>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+          <img src="images/img06.jpg" alt="" width="138" heigh="9$
+        </div>
+        <h1>The best System</h1>
 
-      <ul>
-      <% @constituency.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
+          <h2>Constituency</h2>
+
+
+ 	  <%= form_for(@constituency) do |f| %>
+	    <% if @constituency.errors.any? %>
+	      <div id="error_explanation">
+	        <h2><%= pluralize(@constituency.errors.count, "error") %> prohibited this constituency from being saved:</h2>
+	
+	        <ul>
+	        <% @constituency.errors.full_messages.each do |message| %>
+	          <li><%= message %></li>
+	        <% end %>
+	        </ul>
+	      </div>
+	    <% end %>
+
+	    <div class="field">
+	      <%= f.label :name %><br>
+	      <%= f.text_field :name %>
+	    </div>
+	    <div class="field">
+	      <%= f.label :number_of_voters %><br>
+	      <%= f.number_field :number_of_voters %>
+	    </div>
+	    <div class="field">
+	      <%= f.label :card_number %><br>
+	      <%= f.number_field :card_number %><br>
+	    </div>
+	    <div class="field">
+	      <%= f.label :votes %><br>
+	      <%= f.number_field :votes %><br>
+	    </div>
+	
+	    <div class="actions">
+	      <%= f.submit %>
+	    </div>
+	  <% end %>
+
+	</div>
+      </div>
     </div>
-  <% end %>
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
+  </div>
+</body>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :number_of_voters %><br>
-    <%= f.number_field :number_of_voters %>
-  </div>
-  <div class="field">
-    <%= f.label :card_number %><br>
-    <%= f.number_field :card_number %><br>
-  </div>
-  <div class="field">
-    <%= f.label :votes %><br>
-    <%= f.number_field :votes %><br>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>

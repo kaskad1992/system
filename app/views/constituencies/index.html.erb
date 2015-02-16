@@ -1,35 +1,70 @@
 <%= stylesheet_link_tag "style" %>
 
-<p id="notice"><%= notice %></p>
+<body>
+  <div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+	  <img src="images/img06.jpg" alt="" width="138" heigh="93" class="left" />
+        </div>
+        <h1>The best System</h1>
 
-<h1>Listing Constituencies</h1>
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
+  	  <p id="notice"><%= notice %></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Number of voters</th>
-      <th>Number of cards</th>
-      <th>Number of votes</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+          <h2>Listing Constituencies</h2>
 
-  <tbody>
-    <% @constituencies = Constituency.all %>
-      <tr>
-        <td><%= constituency.name %></td>
-        <td><%= constituency.number_of_voters %></td>
-        <td><%= constituency.card_number %></td>
-        <td><%= constituency.votes %></td>
-        <td><%= link_to 'Show', constituency %></td>
-        <td><%= link_to 'Edit', edit_constituency_path(constituency) %></td>
-        <td><%= link_to 'Destroy', constituency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-  </tbody>
-</table>
+	  <table id="table">
+	    <thead>
+	      <tr>
+	        <th>Name</th>
+	        <th>Number of voters</th>
+	        <th>Number of cards</th>
+	        <th>Number of votes</th>
+	        <th colspan="3"></th>
+	      </tr>
+	    </thead>
 
-<br>
+	    <tbody>
+	      <% @constituencies.each do |constituency| %>
+	        <tr>
+	          <td><%= constituency.name %></td>
+	          <td><%= constituency.number_of_voters %></td>
+	          <td><%= constituency.card_number %></td>
+	          <td><%= constituency.votes %></td>
+	        </tr>
+	      <% end %>
+	    </tbody>
+	  </table>
 
-<%= link_to 'New Constituency', new_constituency_path %>
-<%= link_to 'Logout', logout_path %>
+	  <br>
+	  <div id="menu">
+	    <ul>
+	      <li>
+	        <%= link_to 'New Constituency', new_constituency_path %><br>
+	      </li>
+	      <li>
+	        <%= link_to 'Back', menus_path %><br>
+	      </li>
+	      <li>
+	        <%= link_to 'Logout', logout_path %><br>
+	      </li>
+	    </ul>
+	  </div>
+
+	</div>
+      </div>
+    </div>
+
+</body>
+
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>
+    </div>
+
+  </div>
+
+

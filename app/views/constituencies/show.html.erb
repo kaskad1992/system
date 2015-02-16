@@ -1,29 +1,65 @@
-<h1>Constituency</h1>
-
 <%= stylesheet_link_tag "style" %>
 
-<p id="notice"><%= notice %></p>
+<body>
+<div id="wrapper">
+    <div id="wrapper2">
+      <div id="header">
+        <div id="logo">
+	  <img src="images/img06.jpg" alt="" width="138" heigh="93" class="left" />
+        </div>
+        <h1>The best System</h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @constituency.name %>
-</p>
+      </div>
+      <div id="page">
+        <div id="content">
+          <br>
+          <h2>Constituency</h2>
 
-<p>
-  <strong>Number of voters:</strong>
-  <%= @constituency.number_of_voters %>
-</p>
+	  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Number of cards:</strong>
-  <%= @constituency.card_number %>
-</p>
+	  <p>
+  	    <strong>Name:</strong>
+ 	    <%= @constituency.name %>
+	  </p>
 
-<p>
-  <strong>Number of votes:</strong>
-  <%= @constituency.votes %>
-</p>
+	  <p>
+  	    <strong>Number of voters:</strong>
+  	    <%= @constituency.number_of_voters %>
+	  </p>
 
-<%= link_to 'Edit', edit_constituency_path(@constituency) %> |
-<%= link_to 'Back', constituencies_path %>
-<%= link_to 'Logout', logout_path %>
+	  <p>
+  	    <strong>Number of cards:</strong>
+  	    <%= @constituency.card_number %>
+	  </p>
+
+	  <p>
+  	    <strong>Number of votes:</strong>
+  	    <%= @constituency.votes %>
+	  </p>
+
+	  <div id="menu">
+	    <ul>
+	      <li>
+	        <%= link_to 'Edit', edit_constituency_path(@constituency) %><br>
+	      </li>
+	      <li>
+	        <%= link_to 'Back', constituencies_path %><br>
+	      </li>
+	      <li>
+	        <%= link_to 'Logout', logout_path %><br>
+	      </li>
+	    </ul>
+	  </div>
+
+	</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Katarzyna Drapała, EPI, UJ</p>  
+    </div>
+
+  </div>
+
+</body>
+
