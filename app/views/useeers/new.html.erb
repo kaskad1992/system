@@ -13,6 +13,14 @@
   </div>
 <% end %>
 <p>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :surname %><br />
+  <%= f.text_field :surname %>
+</p>
+<p>
   <%= f.label :login %><br />
   <%= f.text_field :login %>
 </p>
@@ -23,6 +31,10 @@
 <p>
   <%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %>
+</p>
+<p>
+  <%= f.radio_button :role, 'admin' %>
+  <%= label :role_admin, 'Admin' %>
 </p>
 <p>
   <%= f.radio_button :role, 'constituency' %>

@@ -27,6 +27,8 @@ class ApplicationController < ActionController::Base
 #      redirect_to root_path
 #    end
     case current_useeer.role
+    when 'admin'
+      redirect_to '/menus/'
     when 'coordinator1'
       redirect_to '/constituencies/1'
     when 'coordinator2'

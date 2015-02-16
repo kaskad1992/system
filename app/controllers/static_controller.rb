@@ -7,4 +7,10 @@ class StaticController < ApplicationController
   def constituency
   end
 
+  def committee
+  end
+
+  def useeer
+  end
+
 end

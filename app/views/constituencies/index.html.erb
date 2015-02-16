@@ -16,7 +16,7 @@
   </thead>
 
   <tbody>
-    <% @constituencies.each do |constituency| %>
+    <% @constituencies = Constituency.all %>
       <tr>
         <td><%= constituency.name %></td>
         <td><%= constituency.number_of_voters %></td>
@@ -26,10 +26,10 @@
         <td><%= link_to 'Edit', edit_constituency_path(constituency) %></td>
         <td><%= link_to 'Destroy', constituency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
   </tbody>
 </table>
 
 <br>
 
 <%= link_to 'New Constituency', new_constituency_path %>
+<%= link_to 'Logout', logout_path %>

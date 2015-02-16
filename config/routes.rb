@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     resources :constituencies
     resources :committees
     resources :useeers
+    resources :menus
 
     root :to => 'static#index'
     resource :useeer_session, :only => [ :new, :create, :destroy]
