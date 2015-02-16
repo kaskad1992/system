@@ -55981,3 +55981,194 @@ ActionController::RoutingError (No route matches [GET] "/constituencies/3/images
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (41.8ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (26.3ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (729.0ms)
+
+
+Started GET "/constituencies/3/" for 127.0.0.1 at 2015-02-16 23:00:21 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ConstituenciesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mConstituency Load (2.3ms)[0m  SELECT  "constituencies".* FROM "constituencies" WHERE "constituencies"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered constituencies/show.html.erb within layouts/application (558.9ms)
+Completed 200 OK in 14629ms (Views: 14158.4ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/active_admin-42e72ce1db02f921d76b4782f82fc9fd.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:38 +0100
+
+
+Started GET "/assets/committees-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:38 +0100
+
+
+Started GET "/assets/election_committees-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:39 +0100
+
+
+Started GET "/assets/constituencies-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:39 +0100
+
+
+Started GET "/assets/scaffolds-d151e6d7e7ce7872d03bc9318be5185f.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:39 +0100
+
+
+Started GET "/assets/useeers-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:39 +0100
+
+
+Started GET "/assets/user_sessions-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:40 +0100
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:40 +0100
+
+
+Started GET "/assets/vootes-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:40 +0100
+
+
+Started GET "/assets/votes-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:40 +0100
+
+
+Started GET "/assets/application-481d88856ae3065e23c759f6317b8afd.css?body=1" for 127.0.0.1 at 2015-02-16 23:00:40 +0100
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:41 +0100
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:41 +0100
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:41 +0100
+
+
+Started GET "/assets/jquery-ui/core-290c80ecb8a0cc8abe3ce4c572428231.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:42 +0100
+
+
+Started GET "/assets/jquery-ui/datepicker-46fef2bd08c7152eabb139e0fce7b289.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:42 +0100
+
+
+Started GET "/assets/jquery-ui/widget-320c0e6ab9d0ba9853aeac7cde601034.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:42 +0100
+
+
+Started GET "/assets/jquery-ui/button-2beb8f828ae2bf5bd866a1d49a961e89.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:42 +0100
+
+
+Started GET "/assets/jquery-ui/mouse-ff2fbf51cc09ac75e71dfc85cd384590.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:43 +0100
+
+
+Started GET "/assets/jquery-ui/draggable-9250c452292e1bd4057d39344ed9f6f2.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:43 +0100
+
+
+Started GET "/assets/jquery-ui/position-a246667f9ce1d2f29e825269f137af38.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:43 +0100
+
+
+Started GET "/assets/jquery-ui/resizable-4ceb16086b541dd8503b73ff1ebe634a.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:43 +0100
+
+
+Started GET "/assets/jquery-ui/dialog-c1fa41ba5b29b08fcab3fe60e7172348.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:44 +0100
+
+
+Started GET "/assets/jquery-ui/sortable-fd3842e48545c56fbd507aee96bb367d.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:44 +0100
+
+
+Started GET "/assets/jquery-ui/tabs-77d5968531a2f0c3e331c2b690c87826.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:44 +0100
+
+
+Started GET "/assets/active_admin/base-2181e9e3997cb425be6807982e5e42d3.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:45 +0100
+
+
+Started GET "/assets/active_admin/lib/batch_actions-9d98d7cf1f49cc2f494d6115d7097fe1.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:45 +0100
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler-633bd32bab7ec25731a67af1e817d147.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:46 +0100
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu-776a76a83c4068a214a4eb470b57dae4.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:46 +0100
+
+
+Started GET "/assets/active_admin/lib/flash-977ddfc1a734c9e50e7d0c2d3af15d14.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:46 +0100
+
+
+Started GET "/assets/active_admin/lib/has_many-54702962e8fef0b2eedd2af90681c1a4.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:46 +0100
+
+
+Started GET "/assets/active_admin/lib/modal_dialog-f13deb4b26f91eba24bf9d635d68c54e.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:46 +0100
+
+
+Started GET "/assets/active_admin/lib/per_page-b1d97a79c912d2085d3971cc09e6927a.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:47 +0100
+
+
+Started GET "/assets/active_admin/lib/popover-cbb946556eca6cc675ed0a89ed2d1ddc.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:47 +0100
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler-f0fc7612f005a3d5a2cc8892039b9eed.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:47 +0100
+
+
+Started GET "/assets/active_admin/ext/jquery-ui-00c454438ea743a97c0676f6037b7cd9.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:47 +0100
+
+
+Started GET "/assets/active_admin/ext/jquery-4b28b832ea8e9b1086f94de24e19ef5d.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:48 +0100
+
+
+Started GET "/assets/active_admin/application-9f5fa024ba244a0f8d80741d8bb4da35.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:48 +0100
+
+
+Started GET "/assets/active_admin-459d2a2b6e0ca8782914b45efbc74394.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:48 +0100
+
+
+Started GET "/assets/committees-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:49 +0100
+
+
+Started GET "/assets/constituencies-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:49 +0100
+
+
+Started GET "/assets/election_committees-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:49 +0100
+
+
+Started GET "/assets/useeers-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:50 +0100
+
+
+Started GET "/assets/user_sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:50 +0100
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:50 +0100
+
+
+Started GET "/assets/vootes-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:50 +0100
+
+
+Started GET "/assets/votes-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:50 +0100
+
+
+Started GET "/assets/application-cc9ee708b5661d6760292155f00509dd.js?body=1" for 127.0.0.1 at 2015-02-16 23:00:50 +0100
+
+
+Started GET "/constituencies/3/images/img06.jpg" for 127.0.0.1 at 2015-02-16 23:00:51 +0100
+
+ActionController::RoutingError (No route matches [GET] "/constituencies/3/images/img06.jpg"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.1.0) lib/request_store/middleware.rb:8:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (22.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (79.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (199.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (52.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (32.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (1488.2ms)
