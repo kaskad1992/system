@@ -112,6 +112,7 @@ a img {
 img.left {
 	float: left;
 	margin: 5px 20px 0 0;
+	z-index: 2;
 }
 
 img.right {
